@@ -125,3 +125,41 @@ def check(
         typer.echo(report.model_dump_json(indent=2))
     else:
         typer.echo(format_report(report))
+
+
+@app.command("eval")
+def evaluate(
+    dataset: Path | None = typer.Option(
+        None,
+        help="Path to a snippets JSON file. Defaults to the bundled evals/snippets.json.",
+        exists=True,
+        readable=True,
+        dir_okay=False,
+    ),
+    run_verdicts: bool = typer.Option(
+        False,
+        "--verdicts/--retrieval-only",
+        help="Run the LLM judge as well as retrieval. Requires a configured provider key.",
+    ),
+    mock_embeddings: bool = typer.Option(
+        False,
+        help="Use dummy embeddings (FTS still runs). Useful in tests.",
+    ),
+    json_output: bool = typer.Option(False, "--json", help="Print metrics as JSON."),
+) -> None:
+    """Score retrieval (and optionally verdicts) against the synthetic ad set."""
+    from ad_compliance.config import get_settings
+    from ad_compliance.evaluate import format_eval_result, run_eval
+
+    result = run_eval(
+        settings=get_settings(),
+        dataset_path=dataset,
+        mock_embeddings=mock_embeddings,
+        run_verdicts=run_verdicts,
+    )
+    if json_output:
+        import json
+
+        typer.echo(json.dumps(result.as_dict(), indent=2))
+    else:
+        typer.echo(format_eval_result(result))

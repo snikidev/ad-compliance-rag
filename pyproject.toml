@@ -49,6 +49,7 @@ packages = ["src/ad_compliance"]
 
 [tool.hatch.build.targets.wheel.force-include]
 "data/Protecting-children-and-young-people-gambling-guidance-2022.pdf" = "ad_compliance/data/Protecting-children-and-young-people-gambling-guidance-2022.pdf"
+"evals/snippets.json" = "ad_compliance/evals/snippets.json"
 
 [tool.ruff]
 target-version = "py312"

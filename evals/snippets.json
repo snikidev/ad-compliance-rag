@@ -1,0 +1,450 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "disclaimer": "All advertisement texts in this file were written for this repository's evaluation set. They are synthetic and are not taken from real campaigns.",
+  "source_guidance": {
+    "id": "cap-bcap-2022",
+    "title": "Gambling and lotteries advertising: protecting under-18s",
+    "publisher": "CAP and BCAP",
+    "year": 2022
+  },
+  "items": [
+    {
+      "id": "b01",
+      "label": "breach",
+      "channel": "social",
+      "expected_sections": [
+        20,
+        23
+      ],
+      "text": "New cartoon slots! Help Santa and his cuddly elf pals open magical loot sacks. Spin now \u2014 it's as easy as a Christmas cartoon!",
+      "notes": "Advertiser-created cute/cartoon characters and Santa are high-risk under sections 20 and 23."
+    },
+    {
+      "id": "b02",
+      "label": "breach",
+      "channel": "video",
+      "expected_sections": [
+        20,
+        23
+      ],
+      "text": "Join Princess Sparkle and her pirate crew as they hunt for treasure in our animated slots world. Bright, bouncy, and built for fun!",
+      "notes": "Princesses, pirates and child-oriented animation are listed as high-risk character types."
+    },
+    {
+      "id": "b03",
+      "label": "breach",
+      "channel": "display",
+      "expected_sections": [
+        20
+      ],
+      "text": "Follow the gingerbread trail. Hansel and Gretel scratchcards are here \u2014 every ticket is a fairy-tale forest adventure.",
+      "notes": "Common fairy tales are called out as high-risk content."
+    },
+    {
+      "id": "b04",
+      "label": "breach",
+      "channel": "social",
+      "expected_sections": [
+        20
+      ],
+      "text": "The Tooth Fairy just dropped a bonus. The Easter Bunny is hiding free spins all weekend.",
+      "notes": "Cultural characters like the Tooth Fairy and Easter Bunny are high-risk."
+    },
+    {
+      "id": "b05",
+      "label": "breach",
+      "channel": "social",
+      "expected_sections": [
+        24,
+        13
+      ],
+      "text": "Open loot boxes, trade skins, and level up your character just like in the games you already play. New drop this Friday.",
+      "notes": "Loot boxes, skins and video-game characteristics have inherent strong appeal."
+    },
+    {
+      "id": "b06",
+      "label": "breach",
+      "channel": "video",
+      "expected_sections": [
+        24,
+        13
+      ],
+      "text": "Our new instant-win game looks and plays like a colourful console adventure: power-ups, side-kicks, and a soundtrack from this year's biggest youth eSports title.",
+      "notes": "Gameplay resembling games popular with under-18s, plus eSports themes."
+    },
+    {
+      "id": "b07",
+      "label": "breach",
+      "channel": "social",
+      "expected_sections": [
+        22
+      ],
+      "text": "Skip homework. Ignore the rules. Tonight is for rebelling \u2014 stake it all and show them you don't care about curfew.",
+      "notes": "Youth-culture themes of disregard for authority and teenage rebelliousness."
+    },
+    {
+      "id": "b08",
+      "label": "breach",
+      "channel": "ooh",
+      "expected_sections": [
+        5,
+        6,
+        8
+      ],
+      "text": "Meet Maya, 22, our new brand ambassador. Fresh out of uni and already hitting the biggest parlays. If she can do it, so can you.",
+      "notes": "Features a person who is, or seems, under 25 in a significant role."
+    },
+    {
+      "id": "b09",
+      "label": "breach",
+      "channel": "tv",
+      "expected_sections": [
+        16,
+        17,
+        18
+      ],
+      "text": "Children's Saturday-morning presenter Sam Spark endorses our weekend accumulator. 'I used to host your favourite cartoons \u2014 now I host your bets!'",
+      "notes": "Anyone with a direct connection to under-18s through their role is high-risk."
+    },
+    {
+      "id": "b10",
+      "label": "breach",
+      "channel": "video",
+      "expected_sections": [
+        16,
+        17,
+        18
+      ],
+      "text": "Premier League captain and England striker walks out of the tunnel and straight into our app. 'Play like the lads you watch every weekend.'",
+      "notes": "UK footballers at top clubs or national teams have strong appeal to under-18s."
+    },
+    {
+      "id": "b11",
+      "label": "breach",
+      "channel": "radio",
+      "expected_sections": [
+        26,
+        22
+      ],
+      "text": "Backed by this month's number-one teen pop single, our ad invites 16-year-old fans of the artist to 'vibe and bet' with the same energy as the music video.",
+      "notes": "Music by younger artists popular with under-18s, plus youth targeting."
+    },
+    {
+      "id": "b12",
+      "label": "breach",
+      "channel": "social",
+      "expected_sections": [
+        21,
+        22
+      ],
+      "text": "Get the hoodie, the snapback, and the slang: this drop is straight from the sixth-form corridor to your betting slip.",
+      "notes": "Obviously youth-oriented clothing styles and youth culture themes."
+    },
+    {
+      "id": "b13",
+      "label": "breach",
+      "channel": "social",
+      "expected_sections": [
+        16,
+        17,
+        18
+      ],
+      "text": "The TikTok star with eight million teen followers just went live from our casino lobby. Double-tap to claim the same welcome offer she shouted out.",
+      "notes": "A person with a significant under-18 following on social media."
+    },
+    {
+      "id": "b14",
+      "label": "breach",
+      "channel": "display",
+      "expected_sections": [
+        13,
+        15,
+        24
+      ],
+      "text": "Close-up cinematic footage of a packed youth football final, school-age players celebrating, then a big 'BET IN-PLAY NOW' end frame with our brand.",
+      "notes": "Betting on football has inherent strong appeal; the creative goes well beyond generic/text exemptions."
+    },
+    {
+      "id": "o01",
+      "label": "ok",
+      "channel": "email",
+      "expected_sections": [
+        28,
+        29,
+        30
+      ],
+      "text": "Email to a logged-in, age-verified 18+ customer list: 'This weekend's racing card at Newbury is up. 18+ only. Please gamble responsibly.' Plain typography, no imagery.",
+      "notes": "Age-verified direct email is in the targeting exemption (sections 28\u201330)."
+    },
+    {
+      "id": "o02",
+      "label": "ok",
+      "channel": "sms",
+      "expected_sections": [
+        28,
+        29,
+        30
+      ],
+      "text": "SMS to customers who passed Gambling Commission age verification at sign-up: 'Your 18+ account has a new odds boost on tonight's darts. T&Cs apply.'",
+      "notes": "SMS to robustly age-verified 18+ recipients is an exempt environment."
+    },
+    {
+      "id": "o03",
+      "label": "ok",
+      "channel": "website",
+      "expected_sections": [
+        28,
+        29,
+        30
+      ],
+      "text": "Logged-in area of the operator site (age-verified on sign-up): text odds for Saturday's horse racing, no people, no animation.",
+      "notes": "Operator websites with licence-required age verification are given as a good example of an exempt environment."
+    },
+    {
+      "id": "o04",
+      "label": "ok",
+      "channel": "press",
+      "expected_sections": [
+        15
+      ],
+      "text": "A typographic press ad: brand wordmark, 'Bet 18+', and a short list of Saturday horse-racing prices. No photographs, characters, or colour animation.",
+      "notes": "Text-only references and brand identifiers are listed exemptions when the product itself is not dressed in youth appeal."
+    },
+    {
+      "id": "o05",
+      "label": "ok",
+      "channel": "ooh",
+      "expected_sections": [
+        15
+      ],
+      "text": "A poster of the operator logo on a dark adult colour palette, '18+. BeGambleAware.org', and no product art, people, or sport footage.",
+      "notes": "Brand logos/identifiers only, with responsibility messaging."
+    },
+    {
+      "id": "o06",
+      "label": "ok",
+      "channel": "radio",
+      "expected_sections": [
+        26,
+        27
+      ],
+      "text": "A radio voice-over by a clearly older adult: 'Odds on tonight's professional darts final are available at our brand. 18+ only.' No pop music bed.",
+      "notes": "Adult-oriented sport (darts) and no youth musical content."
+    },
+    {
+      "id": "o07",
+      "label": "ok",
+      "channel": "tv",
+      "expected_sections": [
+        16,
+        18
+      ],
+      "text": "A 52-year-old golf commentator, known mainly to adult sports audiences, reads a sober voice-over over generic footage of an empty fairway. No players under 25, no pop soundtrack.",
+      "notes": "Low-risk sportspeople in clearly adult-oriented sports such as golf."
+    },
+    {
+      "id": "o08",
+      "label": "ok",
+      "channel": "display",
+      "expected_sections": [
+        15
+      ],
+      "text": "Text and audio only: 'Bet on Saturday's Premier League fixtures. 18+.' No players, no team anthems, no crowd of children, no game footage.",
+      "notes": "Guidance allows text or audio references to football as a limited exemption for products of inherent strong appeal."
+    },
+    {
+      "id": "o09",
+      "label": "ok",
+      "channel": "display",
+      "expected_sections": [
+        15
+      ],
+      "text": "A simple lock-up of our brand logo next to a competition wordmark, on a plain background, with an 18+ line. No players or celebrations.",
+      "notes": "Logos of teams/competitions are a listed exemption when used without strong-appeal creative."
+    },
+    {
+      "id": "o10",
+      "label": "ok",
+      "channel": "email",
+      "expected_sections": [
+        27,
+        15
+      ],
+      "text": "Age-verified lottery players receive a typographic email listing this week's prize amounts and the adult good-cause grant to a regional hospital. No child performers.",
+      "notes": "Lottery prizes and good causes may be shown; the execution stays typographic and adult."
+    },
+    {
+      "id": "o11",
+      "label": "ok",
+      "channel": "press",
+      "expected_sections": [
+        18
+      ],
+      "text": "A long-retired snooker player, now mainly known to adult audiences as a pundit, appears in a still photograph at a professional table. Copy is odds and 18+ only.",
+      "notes": "Adult-oriented sport (snooker) and a personality without a youth role."
+    },
+    {
+      "id": "o12",
+      "label": "ok",
+      "channel": "ooh",
+      "expected_sections": [
+        15,
+        4
+      ],
+      "text": "Outdoor copy in a financial typographic style: operator name, 'Odds available on Saturday racing', '18+', no photography of people or cartoon art.",
+      "notes": "Generic, adult presentation with no strong-appeal content."
+    },
+    {
+      "id": "o13",
+      "label": "ok",
+      "channel": "website",
+      "expected_sections": [
+        28,
+        30
+      ],
+      "text": "An in-account message after login, shown only to payment-verified 18+ customers, promoting a deposit match on midweek racing in plain text.",
+      "notes": "Payment-validated, logged-in environment plus adult product."
+    },
+    {
+      "id": "r01",
+      "label": "needs_review",
+      "channel": "tv",
+      "expected_sections": [
+        17,
+        18
+      ],
+      "text": "A well-known retired Premier League striker, now a weekly pundit, smiles into camera and says the weekend's fixtures are up on our app.",
+      "notes": "Retired footballers who moved into punditry are assessed on their continuing social and media profile."
+    },
+    {
+      "id": "r02",
+      "label": "needs_review",
+      "channel": "social",
+      "expected_sections": [
+        17,
+        18
+      ],
+      "text": "A lower-league footballer with a modest but young Instagram following posts a sponsored story holding our branded scarf.",
+      "notes": "Footballers outside the top flight are judged on social and other media profile \u2014 facts we do not have."
+    },
+    {
+      "id": "r03",
+      "label": "needs_review",
+      "channel": "video",
+      "expected_sections": [
+        22
+      ],
+      "text": "A clearly middle-aged couple play-act a teenage sleepover, complete with slang and a 'we're sneaking out' punchline, then a betting CTA.",
+      "notes": "Older characters can still create issues if their behaviour is youthful; humour is fact-sensitive."
+    },
+    {
+      "id": "r04",
+      "label": "needs_review",
+      "channel": "display",
+      "expected_sections": [
+        15,
+        13
+      ],
+      "text": "A betting ad for a mid-table football match that uses only the two club crests and a kick-off time, no players. Posted on an open social feed.",
+      "notes": "Club logos are an exemption, but the environment is not age-gated and football remains inherent strong appeal \u2014 worth a review."
+    },
+    {
+      "id": "r05",
+      "label": "needs_review",
+      "channel": "radio",
+      "expected_sections": [
+        26
+      ],
+      "text": "A radio ad for in-play football betting uses an 'upbeat current chart track' in the bed. The artist is not named in the script.",
+      "notes": "Musical content popular with under-18s is high-risk; we do not know which track is used."
+    },
+    {
+      "id": "r06",
+      "label": "needs_review",
+      "channel": "display",
+      "expected_sections": [
+        25,
+        24
+      ],
+      "text": "A grid of brightly coloured game tiles on the operator homepage, one of which shows a stylised cartoon mascot in the corner of the thumbnail.",
+      "notes": "Game tiles and residual animation need a case-by-case look at how prominent and child-oriented they are."
+    },
+    {
+      "id": "r07",
+      "label": "needs_review",
+      "channel": "tv",
+      "expected_sections": [
+        27,
+        5
+      ],
+      "text": "A lottery commercial spends most of its time on a primary-school playground refurbishment paid for by good-cause funding, then a brief 'play this week' end frame.",
+      "notes": "Lotteries have a narrow path for featuring under-25s in good-cause depictions; this execution may or may not stay inside it."
+    },
+    {
+      "id": "r08",
+      "label": "needs_review",
+      "channel": "tv",
+      "expected_sections": [
+        14,
+        13
+      ],
+      "text": "An in-play ad for the men's rugby union World Cup final uses stadium crowd footage and the tournament logo, no identifiable players.",
+      "notes": "High-profile national tournaments in other sports can raise strong appeal even when the sport in general is more moderate."
+    },
+    {
+      "id": "r09",
+      "label": "needs_review",
+      "channel": "social",
+      "expected_sections": [
+        17,
+        18
+      ],
+      "text": "A professional eSports competitor with an unstated audience split appears in our stream overlay holding a branded cup.",
+      "notes": "Leading eSports players are high-risk; lesser-known players depend on profile data we do not have."
+    },
+    {
+      "id": "r10",
+      "label": "needs_review",
+      "channel": "ooh",
+      "expected_sections": [
+        27,
+        22
+      ],
+      "text": "A lottery poster titled 'Family fun night' with smiling adults and a brightly coloured ticket, no cartoon characters.",
+      "notes": "'Family fun' framing can tilt toward youth appeal and should be reviewed even without prohibited characters."
+    },
+    {
+      "id": "r11",
+      "label": "needs_review",
+      "channel": "video",
+      "expected_sections": [
+        23
+      ],
+      "text": "A casino brand film set in a stylish adult bar uses a faint animated sparkle loop in the background and no characters.",
+      "notes": "Background animation is not automatically a breach, but the new strong-appeal rules still look at graphics."
+    },
+    {
+      "id": "r12",
+      "label": "needs_review",
+      "channel": "social",
+      "expected_sections": [
+        7,
+        10
+      ],
+      "text": "The operator's official X/Twitter feed posts a mix of injury news on a youth academy prospect, fixture reminders, and a 'odds out now' product stinger in the same thread.",
+      "notes": "Social news feeds are called out specifically; mixing youth-adjacent football content with offers is a grey area."
+    },
+    {
+      "id": "r13",
+      "label": "needs_review",
+      "channel": "tv",
+      "expected_sections": [
+        6,
+        9
+      ],
+      "text": "A wide stadium shot includes, in the crowd, several people who may look under 25. None of them speak or are picked out by the camera.",
+      "notes": "Incidental background depictions are often out of scope, but 'may look under 25' still warrants a review."
+    }
+  ]
+}
