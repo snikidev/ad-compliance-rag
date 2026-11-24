@@ -53,3 +53,33 @@ def ingest(
         f"Ingested {result.chunks} chunks from {result.pdf_path.name} "
         f"into {result.lancedb_uri}/{result.table} ({result.rows} rows)."
     )
+
+
+@app.command("debug-retrieve")
+def debug_retrieve(
+    query: str = typer.Argument(..., help="Ad copy or a free-text retrieval query."),
+    top_k: int | None = typer.Option(None, help="Override AD_COMPLIANCE_TOP_K."),
+    query_type: str = typer.Option(
+        "hybrid",
+        help="hybrid (default), vector, or fts.",
+    ),
+    mock_embeddings: bool = typer.Option(
+        False,
+        help="Use dummy embeddings (only useful if the index was also ingested that way).",
+    ),
+) -> None:
+    """Show the guidance passages a query would retrieve, with scores and citations."""
+    from ad_compliance.config import get_settings
+    from ad_compliance.retrieve import format_debug_report, retrieve
+
+    settings = get_settings()
+    if top_k is not None:
+        settings.top_k = top_k
+    hits = retrieve(
+        query,
+        settings=settings,
+        mock_embeddings=mock_embeddings,
+        top_k=top_k,
+        query_type=query_type,
+    )
+    typer.echo(format_debug_report(query, hits))

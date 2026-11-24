@@ -52,3 +52,15 @@ def build_embed_model(
             "set AD_COMPLIANCE_EMBED_PROVIDER=fastembed for local ingest."
         )
     raise ValueError(f"Unknown embed provider: {provider}")
+
+
+def build_llm(settings: Settings | None = None, *, mock: bool = False):
+    """Return a chat LLM. Implemented fully in the verdict-engine stage."""
+    if mock:
+        from llama_index.core.llms.mock import MockLLM
+
+        return MockLLM()
+    raise RuntimeError(
+        "LLM providers (OpenAI, Azure OpenAI, Ollama) are wired up in the "
+        "verdict-engine stage. Until then, keep AD_COMPLIANCE_RERANKER=rrf."
+    )
