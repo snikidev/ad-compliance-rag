@@ -83,3 +83,45 @@ def debug_retrieve(
         query_type=query_type,
     )
     typer.echo(format_debug_report(query, hits))
+
+
+@app.command()
+def check(
+    ad_text: str | None = typer.Argument(
+        None,
+        help="The advertisement copy to review. Omit and use --file to read a document.",
+    ),
+    file: Path | None = typer.Option(
+        None,
+        "--file",
+        "-f",
+        help="Read ad copy from a text file.",
+        exists=True,
+        readable=True,
+        dir_okay=False,
+    ),
+    json_output: bool = typer.Option(
+        False,
+        "--json",
+        help="Print the ComplianceReport as JSON.",
+    ),
+    mock_embeddings: bool = typer.Option(
+        False,
+        help="Use dummy embeddings (only if the index was ingested that way).",
+    ),
+) -> None:
+    """Retrieve relevant guidance and produce a structured compliance verdict."""
+    from ad_compliance.config import get_settings
+    from ad_compliance.verdict import check_ad, format_report
+
+    text = ad_text
+    if file is not None:
+        text = file.read_text(encoding="utf-8")
+    if not text or not text.strip():
+        raise typer.BadParameter("Provide ad copy as an argument or via --file.")
+
+    report = check_ad(text, settings=get_settings(), mock_embeddings=mock_embeddings)
+    if json_output:
+        typer.echo(report.model_dump_json(indent=2))
+    else:
+        typer.echo(format_report(report))
