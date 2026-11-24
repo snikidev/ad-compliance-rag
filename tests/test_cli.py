@@ -16,3 +16,9 @@ def test_help() -> None:
     result = runner.invoke(app, ["--help"])
     assert result.exit_code == 0
     assert "under-18s" in result.stdout
+
+
+def test_ingest_help() -> None:
+    result = runner.invoke(app, ["ingest", "--help"])
+    assert result.exit_code == 0
+    assert "LanceDB" in result.stdout

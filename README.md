@@ -21,8 +21,11 @@ interfaces follow.
 uv sync
 cp .env.example .env
 uv run pytest
+uv run ad-compliance ingest   # local FastEmbed + LanceDB under .lancedb/
 uv run ad-compliance version
 ```
+
+`ingest` uses FastEmbed by default (no API key). Unit tests use mock embeddings so CI never downloads a model or talks to a provider.
 
 Python 3.12+ is required. See `.env.example` for provider settings.
 

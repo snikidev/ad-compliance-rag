@@ -7,8 +7,15 @@ license = { text = "MIT" }
 authors = [{ name = "snikidev" }]
 requires-python = ">=3.12"
 dependencies = [
+  "fastembed>=0.5",
+  "lancedb>=0.21",
+  "llama-index-core>=0.14,<0.15",
+  "llama-index-embeddings-fastembed>=0.5",
+  "llama-index-vector-stores-lancedb>=0.4",
+  "pandas>=3.1.1",
   "pydantic>=2.10",
   "pydantic-settings>=2.6",
+  "pypdf>=5.0",
   "python-dotenv>=1.0",
   "typer>=0.15",
 ]
@@ -34,6 +41,9 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["src/ad_compliance"]
 
+[tool.hatch.build.targets.wheel.force-include]
+"data/Protecting-children-and-young-people-gambling-guidance-2022.pdf" = "ad_compliance/data/Protecting-children-and-young-people-gambling-guidance-2022.pdf"
+
 [tool.ruff]
 target-version = "py312"
 line-length = 100
@@ -41,6 +51,9 @@ src = ["src", "tests"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/ad_compliance/cli.py" = ["B008"]
 
 [tool.ruff.format]
 quote-style = "double"
