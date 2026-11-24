@@ -1,0 +1,27 @@
+# Optional. The default quickstart does not need Docker.
+services:
+  demo:
+    build: .
+    command: demo
+    ports:
+      - "8501:8501"
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      - lancedb:/app/.lancedb
+      - fastembed:/app/.fastembed_cache
+  api:
+    build: .
+    command: api
+    ports:
+      - "8000:8000"
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      - lancedb:/app/.lancedb
+      - fastembed:/app/.fastembed_cache
+volumes:
+  lancedb:
+  fastembed:

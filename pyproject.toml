@@ -7,7 +7,9 @@ license = { text = "MIT" }
 authors = [{ name = "snikidev" }]
 requires-python = ">=3.12"
 dependencies = [
+  "fastapi>=0.115",
   "fastembed>=0.5",
+  "fastmcp>=2.0",
   "lancedb>=0.21",
   "llama-index-core>=0.14,<0.15",
   "llama-index-embeddings-azure-openai>=0.4",
@@ -23,7 +25,9 @@ dependencies = [
   "pydantic-settings>=2.6",
   "pypdf>=5.0",
   "python-dotenv>=1.0",
+  "streamlit>=1.40",
   "typer>=0.15",
+  "uvicorn[standard]>=0.32",
 ]
 
 [project.scripts]

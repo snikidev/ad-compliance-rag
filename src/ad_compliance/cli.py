@@ -163,3 +163,46 @@ def evaluate(
         typer.echo(json.dumps(result.as_dict(), indent=2))
     else:
         typer.echo(format_eval_result(result))
+
+
+@app.command()
+def serve(
+    host: str = typer.Option("127.0.0.1"),
+    port: int = typer.Option(8000),
+) -> None:
+    """Run the FastAPI server."""
+    import uvicorn
+
+    uvicorn.run("ad_compliance.api:app", host=host, port=port, reload=False)
+
+
+@app.command()
+def demo(
+    host: str = typer.Option("127.0.0.1"),
+    port: int = typer.Option(8501),
+) -> None:
+    """Run the Streamlit demo."""
+    import sys
+    from pathlib import Path
+
+    from streamlit.web import cli as stcli
+
+    script = Path(__file__).with_name("demo.py")
+    sys.argv = [
+        "streamlit",
+        "run",
+        str(script),
+        "--server.address",
+        host,
+        "--server.port",
+        str(port),
+    ]
+    stcli.main()
+
+
+@app.command("mcp")
+def mcp_command() -> None:
+    """Run the FastMCP server on stdio (for Claude Code, Cursor, or OpenCode)."""
+    from ad_compliance.mcp_server import mcp
+
+    mcp.run()
